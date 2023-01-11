@@ -1,0 +1,5 @@
+command: convert
+
+*.pdf --> *.jpg: convert -density 300 -quality 100 demo.pdf demo.jpg
+
+*.jpg --> *.pdf: convert `ls -v *.jpg` demo.pdf

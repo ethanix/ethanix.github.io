@@ -1,0 +1,7 @@
+command: pdftk
+
+pdftk input.pdf cat 2-end output demo.pdf
+
+pdftk input.pdf burst output demo_%d.pdf
+
+pdftk input_1.pdf input_2.pdf cat output demo.pdf

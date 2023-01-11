@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>music player</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link href="../../../../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../../../../assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../../../../assets/fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" href="../../../../assets/css/main.css" />
+</head>
+
+<body>
+  <!-- sidebar -->
+    <div id="sidebar">
+	<div class="inner">
+	<nav id="menu">
+		<ul>
+			<li><a href="../../index.html">Homepage</a></li>
+		</ul>
+    </nav>
+	<section>
+		<header class="major">
+			<h2>Hyperlinks</h2>
+		</header>
+		<div class="mini-posts">
+		<a href="#" onclick="load_track(0);playsong()" id="next"><h3><u>dogedoge ↴</u></h3></a>
+		<h4>ps: a website about how to say hello a website about how to say hello</h4>
+		<a href="https://linux.cn" target="_blank"><h3><u>linux.cn ↴</u></h3></a>
+		<h4>ps: a website about how to say hello</h4>
+        <a href="https://www.dogedoge.com" target="_blank"><h3><u>dogedoge ↴</u></h3></a>
+		<h4>ps: a website about how to say hello a website about how to say hello</h4>
+		<a href="https://linux.cn" target="_blank"><h3><u>linux.cn ↴</u></h3></a>
+		<h4>ps: a website about how to say hello</h4>
+        <a href="https://linux.cn" target="_blank"><h3><u>linux.cn ↴</u></h3></a>
+		<h4>ps: a website about how to say hello</h4>
+        <a href="https://linux.cn" target="_blank"><h3><u>linux.cn ↴</u></h3></a>
+		<h4>ps: a website about how to say hello</h4>
+		<a href="https://linux.cn" target="_blank"><h3><u>linux.cn ↴</u></h3></a>
+		<h4>ps: a website about how to say hello</h4>
+		</div>
+	</section>
+  	</div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+    <p id="logo"><i class="fa-solid fa-compact-disc">&nbsp;o n l i n e</i></p>
+
+     <div class="left">
+     <img id="track_image">
+         <div class="volume">
+            <p id="volume_show">100</p>
+            <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+            <input type="range" min="0" max="100" value="100" onchange="volume_change()" id="volume">
+         </div>
+    </div>
+
+    <div class="right">
+        <div class="show_song_no">
+        <b id="present"></b>&nbsp;&nbsp;&nbsp;/<p id="total"/>
+        </div>
+
+        <div class="middle">
+        <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+        <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+        <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+        </div>
+
+        <b><p id="title"></p></b>
+        <i><p id="artist"></p></i>
+        <div class="duration">
+        <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+        </div>
+        <button id="auto" onclick="autoplay_switch()"><i class="fa fa-rotate" aria-hidden="true"></i></button>
+        <button id="random" onclick="randomplay_switch()"><i class="fa fa-random" aria-hidden="true"></i></button>
+  	</div>
+    </div>
+
+  <script>let index_no=Math.floor(Math.random()*8);</script>
+  <script src="database/library.js"></script>
+  <script src="assets/script.js"></script>
+  <script src="../../../../assets/js/jquery.min.js"></script>
+  <script src="../../../../assets/js/browser.min.js"></script>
+  <script src="../../../../assets/js/breakpoints.min.js"></script>
+  <script src="../../../../assets/js/util.js"></script>
+  <script src="../../../../assets/js/main.js"></script>
+</body>
+</html>
