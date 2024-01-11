@@ -1,0 +1,25 @@
+>>> FUNCTION:
+Change the background color and font color of the table cell where your cursor focuses on.
+
+>>>TREE:
+>> /main.html
+
+>>>CODE:
+>> /main.html
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <style>
+        .tablex {border-collapse: collapse;}
+        .tablex tr {}
+        .tablex tr td {text-align:center; line-height:30px;}
+        .tablex tr td:hover { background-color:grey; color:white}
+        </style>
+    </head>
+    <body>
+    <table class="tablex" border="1" cellspacing="0" cellpadding="20" align="center">
+    <tr><td>hello</td><td>world</td></tr>
+    <tr><td>ethan</td><td>lee</td></tr>
+    </table>
+    </body>
+</html>
