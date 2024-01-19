@@ -5,28 +5,24 @@ function SmashList(list_input,label){
     let list_4 = [];
     let list_5 = [];
     let list_6 = [];
-    let list_7 = [];
     for (var i=0;i<list_input.length;i++){
-        if(list_input[i][3] == label_list[0]){
+        if(list_input[i][4] == label_list[0]){
             list_1.push(list_input[i]);
         }
-        else if(list_input[i][3] == label_list[1]){
+        else if(list_input[i][4] == label_list[1]){
             list_2.push(list_input[i]);
         }
-        else if(list_input[i][3] == label_list[2]){
+        else if(list_input[i][4] == label_list[2]){
             list_3.push(list_input[i]);
         }
-        else if(list_input[i][3] == label_list[3]){
+        else if(list_input[i][4] == label_list[3]){
             list_4.push(list_input[i]);
         }
-        else if(list_input[i][3] == label_list[4]){
+        else if(list_input[i][4] == label_list[4]){
             list_5.push(list_input[i]);
         }
-        else if(list_input[i][3] == label_list[5]){
+        else if(list_input[i][4] == label_list[5]){
             list_6.push(list_input[i]);
-        }
-        else if(list_input[i][3] == label_list[6]){
-            list_7.push(list_input[i]);
         }
     }
     if( label == label_list[0]){
@@ -47,15 +43,11 @@ function SmashList(list_input,label){
     else if( label == label_list[5]){
         return list_6;
     }
-    else if( label == label_list[6]){
-        return list_7;
-    }
 }
 
-let list_1 = SmashList(list_pro,"1");
-let list_2 = SmashList(list_pro,"10");
-let list_3 = SmashList(list_pro,"2");
-let list_4 = SmashList(list_pro,"3");
-let list_5 = SmashList(list_pro,"4");
-let list_6 = SmashList(list_pro,"5");
-let list_7 = SmashList(list_pro,"6");
+let list_1 = SmashList(list,"1");
+let list_2 = SmashList(list,"10");
+let list_3 = SmashList(list,"2");
+let list_4 = SmashList(list,"3");
+let list_5 = SmashList(list,"4");
+let list_6 = SmashList(list,"5");

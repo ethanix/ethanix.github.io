@@ -5,5 +5,3 @@ head=$((a+3)) && tail=$((b-2))
 sed -n "$head,$tail p" kotoba.sql > list.js
 sed -i 's/(/[/g;s/)/]/g;s/;/,/g' list.js
 sed -i '1i\list=[' list.js && echo "]" >> list.js
-mv -f list.js ./database/list.js
-mv -f kotoba.sql ./database/kotoba.sql
