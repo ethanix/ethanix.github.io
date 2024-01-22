@@ -8,10 +8,10 @@ function LookUp(list_input){
             }
         };
         document.getElementById("result").innerHTML = TabulateList(list_lookup);
-        document.getElementById("result_ring").innerHTML = "> Success!";
+        document.getElementById("result_ring").innerHTML = ">> Output :";
     }
     else{
         document.getElementById("result").innerHTML = "";
-        document.getElementById("result_ring").innerHTML = "> Waiting...";
+        document.getElementById("result_ring").innerHTML = ">> Waiting...";
     }
 }

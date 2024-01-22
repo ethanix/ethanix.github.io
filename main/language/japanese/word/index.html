@@ -30,11 +30,10 @@
         </span>
 	</header><br>
 
-    <h1>>> Lookup</h1>
-    <br>Kotoba stored in total: <font id="count" color="red"></font></p>
-    <table class="tablex" border="1" cellspacing="0" cellpadding="20" align="center" id="result"></table>
+
 
     <h1>>> Kotoba</h1>
+    <br>Kotoba stored in total: <font id="count" color="red"></font></p>
     <b>Class:</b><br>
     <p style="line-height:50px">
     <button id="button" onclick="ShowLabel(list,'0')">ALL</button>
@@ -69,31 +68,21 @@
         <b>Look up the kotoba with the ID or keywords:</b><br><br>
         <input type="text" id="lookup" style="width:100%"></input><br>
         <button id="button" onclick="LookUp(list)">LOOKUP</button><br><br>
-        <i id="result_ring">> Waiting...</i>
+        <i id="result_ring">>> Waiting...</i><br>
+        <table class="tablex" border="1" cellspacing="0" cellpadding="20" align="center" id="result"></table>
     </section>
+
+
 
     <section>
         <p><a class="icon solid fa-angle-double-up" href="#TopAnchor">&nbsp;&nbsp;BACK TO TOP</a></p>
     </section>
 
     <section>
-        <b>Write down the bug ID below:</b><br><br>
+        <b>Write down the bugs below:</b><br><br>
         <textarea style="width:30%"></textarea>
         <script src="assets/autosize.js"></script>
         <script>autosize(document.querySelectorAll('textarea'))</script>
-    </section>
-
-    <section>
-        <p align="center"><b>THE GUIDANCE</b></p>
-        <p><b>>> on the sidebar, you can</b></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;> look up the kotoba </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;> report the bugs </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;> press back-to-top button </p>
-        <p><b>>> on the main page, you can</b></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;> view the kotoba count </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;> select different classes</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;> change between different pages</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;> press back-to-top button </p>
     </section>
 
 	</div>
