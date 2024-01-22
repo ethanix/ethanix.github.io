@@ -24,12 +24,12 @@ DROP TABLE IF EXISTS `kotoba`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `kotoba` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `jisho` varchar(20) NOT NULL,
-  `futsu` varchar(20) NOT NULL,
-  `furigana` varchar(20) NOT NULL,
+  `dict` varchar(20) NOT NULL,
+  `daily` varchar(20) NOT NULL,
+  `pron` varchar(20) NOT NULL,
   `class` varchar(3) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `jisho` (`jisho`,`futsu`,`furigana`,`class`)
+  UNIQUE KEY `dict` (`dict`,`daily`,`pron`,`class`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3367 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -3418,4 +3418,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-01-22 16:32:25
+-- Dump completed on 2024-01-22 17:07:11

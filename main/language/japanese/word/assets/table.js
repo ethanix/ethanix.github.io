@@ -1,5 +1,5 @@
 function TabulateList(list_input){
-    let head = "<tr><td><font color='olive'>ID</font></td><td><font color='maron'>辞書で</font></td><td><font color='brown'>普通に</font></td><td><font color='maroon'>振り仮名</font></td><td><font color='olive'>分類</font></td></tr>"
+    let head = "<tr><td><font color='olive'>ID</font></td><td><font color='maron'>辞書</font></td><td><font color='brown'>日常</font></td><td><font color='maroon'>発音</font></td><td><font color='olive'>分類</font></td></tr>"
     let output = head;
     for (var i=0;i<list_input.length;i++){
         if (list_input[i][2].length > 3 && list_input[i][4] == "10"){
