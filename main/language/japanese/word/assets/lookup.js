@@ -15,3 +15,8 @@ function LookUp(list_input){
         document.getElementById("result_ring").innerHTML = ">> Waiting...";
     }
 }
+function Clear(){
+    document.getElementById("lookup").value="";
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("result_ring").innerHTML = ">> Waiting...";
+}
