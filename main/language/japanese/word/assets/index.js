@@ -51,7 +51,7 @@ function IndexButton(label){
         };
         document.getElementById("index_button").innerHTML = index_button;
     }
-    else if (label == label_list[1]){
+    else if (label == label_list[4]){
         let fragment = Math.floor(list_5.length / number) + 1;
         let index_button = "<button id='button' onclick='ShowIndex(list_5,0)'>ALL</button>&nbsp;";
         for (var i=0;i<fragment;i++){
@@ -59,11 +59,19 @@ function IndexButton(label){
         };
         document.getElementById("index_button").innerHTML = index_button;
     }
-    else if (label == label_list[2]){
+    else if (label == label_list[5]){
         let fragment = Math.floor(list_6.length / number) + 1;
         let index_button = "<button id='button' onclick='ShowIndex(list_6,0)'>ALL</button>&nbsp;";
         for (var i=0;i<fragment;i++){
             index_button = index_button + "<button id='button' onclick='ShowIndex(list_6," + String(i+1) + ")'>#" + String(i+1) + "</button>&nbsp;";
+        };
+        document.getElementById("index_button").innerHTML = index_button;
+    }
+    else if (label == label_list[6]){
+        let fragment = Math.floor(list_7.length / number) + 1;
+        let index_button = "<button id='button' onclick='ShowIndex(list_7,0)'>ALL</button>&nbsp;";
+        for (var i=0;i<fragment;i++){
+            index_button = index_button + "<button id='button' onclick='ShowIndex(list_7," + String(i+1) + ")'>#" + String(i+1) + "</button>&nbsp;";
         };
         document.getElementById("index_button").innerHTML = index_button;
     }
