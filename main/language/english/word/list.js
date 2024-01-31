@@ -1,0 +1,15 @@
+list=[
+[7,'blow','blow nose','','1'],
+[8,'blow up','blow up a balloon','','1'],
+[9,'blow up','car blows up','','1'],
+[10,'blow up at','blow up at me','','1'],
+[31,'jump in','Let\'s jump in','','1'],
+[32,'kick off','kick off the campaign','','1'],
+[33,'kick off','the movie kicks off','','1'],
+[34,'lift','lift a tariff','','1'],
+[55,'upset','upset the balance','','1'],
+[55,'be into','she is into yoga','I am into singing','2'],
+[55,'be interested in','hs is interested in archaeology','I am interested in the lecture','2'],
+[55,'be interested to','hs is interested to learn','I am interested to hear','2'],
+[55,'be involved with','she is involved with the hero','I am involved with her','2'],
+]
