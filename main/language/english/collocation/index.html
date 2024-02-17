@@ -32,16 +32,17 @@
 
 
 
-    <h1>>> Word</h1>
-    <p>Words stored in total: <font id="count" color="red"></font></p>
+    <h1>>> Collocation</h1>
+    <p>Collocations stored in total: <font id="count" color="red"></font></p>
     <b>Class:</b><br>
     <p style="line-height:50px">
     <button id="button" onclick="ShowLabel(list,'0')">ALL</button>
     <button id="button" onclick="ShowLabel(list_1,'1')">1</button>
-    <button id="button" onclick="ShowLabel(list_2,'2')">2</button></p>
-
+    <button id="button" onclick="ShowLabel(list_2,'10')">10</button>
+    <button id="button" onclick="ShowLabel(list_3,'2')">2</button>
+    <button id="button" onclick="ShowLabel(list_4,'20')">20</button></p>
     <b>Page:</b><br>
-    <p align="center"><b><font color="brown"><i id="number"></i> word for each page</font></b></p>
+    <p align="center"><b><font color="brown"><i id="number"></i> items for each page</font></b></p>
     <p id="index_button" style="line-height:50px"></p>
 
     <b>Content:</b><br>
@@ -61,7 +62,7 @@
 	<div class="inner">
 
     <section>
-        <b>Look up the words with the ID or keywords:</b><br><br>
+        <b>Look up the collocations with the ID or keywords:</b><br><br>
         <input type="text" id="lookup" style="width:100%"></input><br>
         <button id="button" onclick="LookUp(list)" style="float: left;">LOOKUP</button>
         <button id="button" onclick="Clear()" style="float: right;">CLEAR</button><br><br><br>

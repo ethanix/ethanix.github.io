@@ -35,4 +35,20 @@ function IndexButton(label){
         };
         document.getElementById("index_button").innerHTML = index_button;
     }
+    else if (label == label_list[2]){
+        let fragment = Math.floor(list_3.length / number) + 1;
+        let index_button = "<button id='button' onclick='ShowIndex(list_3,0)'>ALL</button>&nbsp;";
+        for (var i=0;i<fragment;i++){
+            index_button = index_button + "<button id='button' onclick='ShowIndex(list_3," + String(i+1) + ")'>#" + String(i+1) + "</button>&nbsp;";
+        };
+        document.getElementById("index_button").innerHTML = index_button;
+    }
+    else if (label == label_list[3]){
+        let fragment = Math.floor(list_4.length / number) + 1;
+        let index_button = "<button id='button' onclick='ShowIndex(list_4,0)'>ALL</button>&nbsp;";
+        for (var i=0;i<fragment;i++){
+            index_button = index_button + "<button id='button' onclick='ShowIndex(list_4," + String(i+1) + ")'>#" + String(i+1) + "</button>&nbsp;";
+        };
+        document.getElementById("index_button").innerHTML = index_button;
+    }
 }
