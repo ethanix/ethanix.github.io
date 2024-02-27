@@ -69,9 +69,9 @@ function SmashList(list_input,label){
 let list_1 = SmashList(list,"1");
 let list_2 = SmashList(list,"10");
 let list_3 = SmashList(list,"11");
-let list_4 = SmashList(list,"2");
-let list_5 = SmashList(list,"3");
-let list_6 = SmashList(list,"4");
-let list_7 = SmashList(list,"5");
-let list_8 = SmashList(list,"6");
-let list_9 = SmashList(list,"61");
+let list_4 = SmashList(list,"12");
+let list_5 = SmashList(list,"2");
+let list_6 = SmashList(list,"3");
+let list_7 = SmashList(list,"4");
+let list_8 = SmashList(list,"5");
+let list_9 = SmashList(list,"51");
